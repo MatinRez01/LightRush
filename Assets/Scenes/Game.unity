@@ -6406,35 +6406,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263122028}
   m_CullTransparentMesh: 1
---- !u!21 &267621761
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Height Fog Global
-  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _HeightFogGlobal: 1
-    - _IsHeightFogShader: 1
-    - _IsStandardPipeline: 0
-    - _TITLE: 1
-    - _TransparentQueue: 3002
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &271781295
 GameObject:
   m_ObjectHideFlags: 0
@@ -7703,7 +7674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb525b55a7d8679479b20fc366b5bf91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d71167ccc0bd15644ab0d3744c6a2710, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8925,8 +8896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.831665, y: -93.000046}
-  m_SizeDelta: {x: 367.9221, y: 206.9561}
+  m_AnchoredPosition: {x: -13.6, y: -93.000046}
+  m_SizeDelta: {x: 176.3884, y: 176.3884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464307951
 MonoBehaviour:
@@ -10350,7 +10321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b43c1481964c20844845540f24bf09e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5131927138750a46b3950d68777e17f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21653,7 +21624,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -21663,7 +21634,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -21673,7 +21644,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -22057,7 +22028,7 @@ MonoBehaviour:
   manualPositionAndScale: 0
   renderPriority: 1
   styledSpace0: 0
-  overrideMaterial: {fileID: 1115488402}
+  overrideMaterial: {fileID: 2054726482}
   overrideCamToVolumeDistance: 1
   overrideVolumeDistanceFade: 0
   version: 180
@@ -22090,7 +22061,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 267621761}
+  - {fileID: 1488936606}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23335,7 +23306,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -23345,7 +23316,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -23355,7 +23326,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -24424,66 +24395,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111185159}
   m_CullTransparentMesh: 1
---- !u!21 &1115488402
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Override
-  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _DIRECTIONALL: 1
-    - _DirectionalFalloff: 2
-    - _DirectionalIntensity: 1
-    - _DirectionalMode: 1
-    - _FOGG: 1
-    - _FogAxisMode: 1
-    - _FogColorDuo: 1
-    - _FogDistanceEnd: 200
-    - _FogDistanceFalloff: 2
-    - _FogDistanceStart: -200
-    - _FogHeightEnd: 200
-    - _FogHeightFalloff: 2
-    - _FogHeightStart: 0
-    - _FogIntensity: 1
-    - _FogLayersMode: 0
-    - _IsHeightFogPreset: 1
-    - _IsHeightFogShader: 1
-    - _IsStandardPipeline: 0
-    - _NOISEE: 1
-    - _NoiseDistanceEnd: 50
-    - _NoiseIntensity: 1
-    - _NoiseMode: 2
-    - _NoiseModeBlend: 1
-    - _NoiseScale: 30
-    - _SKYBOXX: 1
-    - _SkyboxFogFalloff: 1
-    - _SkyboxFogFill: 1
-    - _SkyboxFogHeight: 1
-    - _SkyboxFogIntensity: 1
-    - _TITLE: 1
-    m_Colors:
-    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
-    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
-    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
-    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
-    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
-    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &1116020563
 GameObject:
   m_ObjectHideFlags: 0
@@ -26095,8 +26006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -93}
-  m_SizeDelta: {x: 367.9221, y: 206.9561}
+  m_AnchoredPosition: {x: -18.4, y: -93}
+  m_SizeDelta: {x: 178.5, y: 178.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266486248
 MonoBehaviour:
@@ -32359,7 +32270,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -32369,7 +32280,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -32379,7 +32290,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -37052,6 +36963,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487313959}
   m_CullTransparentMesh: 1
+--- !u!21 &1488936606
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Height Fog Global
+  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _HeightFogGlobal: 1
+    - _IsHeightFogShader: 1
+    - _IsStandardPipeline: 0
+    - _TITLE: 1
+    - _TransparentQueue: 3002
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1491918969
 GameObject:
   m_ObjectHideFlags: 0
@@ -39568,8 +39508,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.102234, y: -93.000046}
-  m_SizeDelta: {x: 367.9221, y: 206.9561}
+  m_AnchoredPosition: {x: -24.7, y: -92.14}
+  m_SizeDelta: {x: 179.8, y: 179.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725298358
 MonoBehaviour:
@@ -40374,7 +40314,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -40384,7 +40324,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -40394,7 +40334,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -40439,7 +40379,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -43761,7 +43701,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -43771,7 +43711,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -43781,7 +43721,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -43826,7 +43766,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -43923,6 +43863,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049555615}
   m_CullTransparentMesh: 1
+--- !u!21 &2054726482
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Override
+  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _DIRECTIONALL: 1
+    - _DirectionalFalloff: 2
+    - _DirectionalIntensity: 1
+    - _DirectionalMode: 1
+    - _FOGG: 1
+    - _FogAxisMode: 1
+    - _FogColorDuo: 1
+    - _FogDistanceEnd: 200
+    - _FogDistanceFalloff: 2
+    - _FogDistanceStart: -200
+    - _FogHeightEnd: 200
+    - _FogHeightFalloff: 2
+    - _FogHeightStart: 0
+    - _FogIntensity: 1
+    - _FogLayersMode: 0
+    - _IsHeightFogPreset: 1
+    - _IsHeightFogShader: 1
+    - _IsStandardPipeline: 0
+    - _NOISEE: 1
+    - _NoiseDistanceEnd: 50
+    - _NoiseIntensity: 1
+    - _NoiseMode: 2
+    - _NoiseModeBlend: 1
+    - _NoiseScale: 30
+    - _SKYBOXX: 1
+    - _SkyboxFogFalloff: 1
+    - _SkyboxFogFill: 1
+    - _SkyboxFogHeight: 1
+    - _SkyboxFogIntensity: 1
+    - _TITLE: 1
+    m_Colors:
+    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
+    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
+    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
+    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
+    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
+    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &2068917069
 GameObject:
   m_ObjectHideFlags: 0
@@ -45078,7 +45078,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -45088,7 +45088,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -45098,7 +45098,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -45248,7 +45248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7058824, g: 0.9614448, b: 0.99215686, a: 1}
+  m_Color: {r: 0.5220363, g: 0.9308202, b: 0.9811321, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -46875,8 +46875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29200003, y: 0}
   m_AnchorMax: {x: 0.68817466, y: 0}
-  m_AnchoredPosition: {x: 8.5, y: -40.303}
-  m_SizeDelta: {x: 87.311, y: 261.906}
+  m_AnchoredPosition: {x: 9.9304, y: -22}
+  m_SizeDelta: {x: 87.311, y: 224.7732}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &3515780841696994236
 MonoBehaviour:
@@ -48359,7 +48359,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -48369,7 +48369,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -48379,7 +48379,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -48424,7 +48424,7 @@ PrefabInstance:
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 6336477504532840886, guid: 5610ac7e40c345942bbd1910d0f8873f,
         type: 3}
@@ -48616,7 +48616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300002, guid: 60266ead39d0b5d41b8c0a17901b5b1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88ee48ac35f6d444084a1976beafc01d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -48644,7 +48644,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 69.9349, y: 69.9349}
+  m_SizeDelta: {x: 105.4564, y: 96.1082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8190367858022152513
 CanvasRenderer:
@@ -48708,7 +48708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7058824, g: 0.9614448, b: 0.99215686, a: 1}
+  m_Color: {r: 0.7058824, g: 0.9614448, b: 0.99215686, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

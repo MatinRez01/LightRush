@@ -1,11 +1,6 @@
 using MoreMountains.NiceVibrations;
-using MyBox;
-using PostEffects;
-using System.Collections;
-using System.Collections.Generic;
 using Tools;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class AppConfig : MonoBehaviour
 {

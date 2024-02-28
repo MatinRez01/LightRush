@@ -1,11 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Tools;
-using UnityEditor.Rendering;
 using UnityEngine;
-using Vectors;
-using Random = System.Random;
 
 public class Spawner : MonoBehaviour
 {
