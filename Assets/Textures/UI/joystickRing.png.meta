@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: e36108e3e66c798479767e6dd25d46ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: joystickRing
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 512
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: joystickRing
+      rect:
+        serializedVersion: 2
+        x: 4.07612
+        y: 4.07612
+        width: 503.8478
+        height: 503.8478
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -170, y: -205}
+        - {x: -223, y: -141}
+        - {x: -252, y: -57.00002}
+        - {x: -252, y: 69.99998}
+        - {x: -251, y: 73.99998}
+        - {x: -209, y: 173}
+        - {x: -85.00002, y: 252}
+        - {x: 45.99998, y: 252}
+        - {x: 103, y: 242}
+        - {x: 222, y: 154}
+        - {x: 252, y: 61.99998}
+        - {x: 252, y: -45.00002}
+        - {x: 242, y: -97.00002}
+        - {x: 192, y: -173}
+        - {x: 155, y: -205}
+        - {x: 92.99998, y: -246}
+        - {x: 60.99998, y: -252}
+        - {x: -73.00002, y: -252}
+      physicsShape:
+      - - {x: 99.99998, y: -233}
+        - {x: 131, y: -217}
+        - {x: 142, y: -209}
+        - {x: 152, y: -201}
+        - {x: 173, y: -184}
+        - {x: 192, y: -164}
+        - {x: 201, y: -152}
+        - {x: 211, y: -139}
+        - {x: 219, y: -126}
+        - {x: 227, y: -110}
+        - {x: 232, y: -99.00001}
+        - {x: 238, y: -87.00002}
+        - {x: 247, y: -57.00002}
+        - {x: 248, y: -46.00001}
+        - {x: 251, y: -25.00002}
+        - {x: 252, y: -10.00001}
+        - {x: 252, y: 9.999984}
+        - {x: 251, y: 24.99998}
+        - {x: 250, y: 32.99998}
+        - {x: 248, y: 45.99998}
+        - {x: 243, y: 71.99998}
+        - {x: 236, y: 89.99998}
+        - {x: 232, y: 98.99998}
+        - {x: 225, y: 115}
+        - {x: 216, y: 131}
+        - {x: 204, y: 149}
+        - {x: 192, y: 164}
+        - {x: 173, y: 184}
+        - {x: 162, y: 193}
+        - {x: 149, y: 204}
+        - {x: 139, y: 211}
+        - {x: 126, y: 219}
+        - {x: 110, y: 227}
+        - {x: 93.99998, y: 234}
+        - {x: 80.99998, y: 240}
+        - {x: 59.99998, y: 245}
+        - {x: 39.99998, y: 249}
+        - {x: 24.99998, y: 251}
+        - {x: 9.999984, y: 252}
+        - {x: -10.00001, y: 252}
+        - {x: -25.00002, y: 251}
+        - {x: -46.00001, y: 248}
+        - {x: -72.00002, y: 243}
+        - {x: -90.00002, y: 236}
+        - {x: -99.00001, y: 232}
+        - {x: -115, y: 225}
+        - {x: -131, y: 216}
+        - {x: -139, y: 211}
+        - {x: -158, y: 197}
+        - {x: -173, y: 184}
+        - {x: -192, y: 164}
+        - {x: -204, y: 149}
+        - {x: -211, y: 139}
+        - {x: -219, y: 126}
+        - {x: -225, y: 115}
+        - {x: -235, y: 94.99998}
+        - {x: -240, y: 80.99998}
+        - {x: -242, y: 70.99998}
+        - {x: -246, y: 55.99998}
+        - {x: -249, y: 39.99998}
+        - {x: -251, y: 24.99998}
+        - {x: -252, y: 9.999984}
+        - {x: -252, y: -10.00001}
+        - {x: -251, y: -25.00002}
+        - {x: -248, y: -46.00001}
+        - {x: -243, y: -72.00002}
+        - {x: -232, y: -99.00001}
+        - {x: -225, y: -115}
+        - {x: -216, y: -131}
+        - {x: -211, y: -139}
+        - {x: -204, y: -149}
+        - {x: -192, y: -164}
+        - {x: -173, y: -184}
+        - {x: -162, y: -193}
+        - {x: -149, y: -204}
+        - {x: -138, y: -211}
+        - {x: -126, y: -219}
+        - {x: -110, y: -227}
+        - {x: -99.00001, y: -232}
+        - {x: -87.00002, y: -237}
+        - {x: -61.00002, y: -246}
+        - {x: -33.00002, y: -250}
+        - {x: -25.00002, y: -251}
+        - {x: -10.00001, y: -252}
+        - {x: 9.999984, y: -252}
+        - {x: 24.99998, y: -251}
+        - {x: 45.99998, y: -248}
+        - {x: 71.99998, y: -243}
+      - - {x: -38.00002, y: -218}
+        - {x: -68.00002, y: -211}
+        - {x: -90.00002, y: -203}
+        - {x: -92.00001, y: -203}
+        - {x: -115, y: -190}
+        - {x: -129, y: -181}
+        - {x: -146, y: -169}
+        - {x: -164, y: -151}
+        - {x: -172, y: -141}
+        - {x: -183, y: -128}
+        - {x: -194, y: -111}
+        - {x: -207, y: -88.00002}
+        - {x: -207, y: -86.00001}
+        - {x: -212, y: -73.00001}
+        - {x: -219, y: -49.00001}
+        - {x: -223, y: -27.00001}
+        - {x: -224, y: -17.00002}
+        - {x: -225, y: 18.99998}
+        - {x: -224, y: 19.99998}
+        - {x: -219, y: 51.99998}
+        - {x: -212, y: 75.99998}
+        - {x: -207, y: 88.99998}
+        - {x: -207, y: 90.99998}
+        - {x: -194, y: 114}
+        - {x: -173, y: 145}
+        - {x: -157, y: 163}
+        - {x: -156, y: 163}
+        - {x: -146, y: 172}
+        - {x: -132, y: 182}
+        - {x: -115, y: 193}
+        - {x: -92.00001, y: 206}
+        - {x: -90.00002, y: 206}
+        - {x: -61.00002, y: 216}
+        - {x: -21.00002, y: 223}
+        - {x: -20.00001, y: 224}
+        - {x: 15.99998, y: 223}
+        - {x: 32.99998, y: 221}
+        - {x: 62.99998, y: 214}
+        - {x: 74.99998, y: 210}
+        - {x: 84.99998, y: 206}
+        - {x: 86.99998, y: 206}
+        - {x: 110, y: 193}
+        - {x: 141, y: 172}
+        - {x: 159, y: 156}
+        - {x: 159, y: 155}
+        - {x: 188, y: 117}
+        - {x: 189, y: 114}
+        - {x: 202, y: 90.99998}
+        - {x: 202, y: 88.99998}
+        - {x: 207, y: 75.99998}
+        - {x: 214, y: 51.99998}
+        - {x: 218, y: 29.99998}
+        - {x: 219, y: 19.99998}
+        - {x: 220, y: -16.00002}
+        - {x: 219, y: -17.00002}
+        - {x: 214, y: -49.00001}
+        - {x: 210, y: -64.00002}
+        - {x: 202, y: -86.00001}
+        - {x: 202, y: -88.00002}
+        - {x: 189, y: -111}
+        - {x: 168, y: -142}
+        - {x: 151, y: -160}
+        - {x: 113, y: -189}
+        - {x: 110, y: -190}
+        - {x: 86.99998, y: -203}
+        - {x: 84.99998, y: -203}
+        - {x: 55.99998, y: -213}
+        - {x: 32.99998, y: -218}
+        - {x: 15.99998, y: -220}
+        - {x: -20.00001, y: -221}
+        - {x: -21.00002, y: -220}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      joystickRing: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

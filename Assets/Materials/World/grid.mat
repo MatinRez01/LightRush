@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: grid
+  m_Shader: {fileID: 4800000, guid: 63b56657641a5e745ac50996ef6cf986, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - USE_DIR_LIGHT
+  - USE_MAIN_TEX
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    QUEUE: Transparent
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 12993001de4fc1543bf954a4ebb7c44f, type: 3}
+        m_Scale: {x: 9, y: 9}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.7
+    - _AlphaPower: 0.5
+    - _AmbientPower: 0
+    - _BlurAmount: 0
+    - _Brightness: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.151
+    - _DetailNormalMapScale: 1
+    - _Distort: 1
+    - _DstBlend: 0
+    - _EmissionPower: 3.7
+    - _FogAnimationFreq: 0.1
+    - _FogAnimationHeight: 0.1
+    - _FogDensity: 1
+    - _FogEnd: 50
+    - _FogHeight: 0.1
+    - _FogStart: 0
+    - _FogYStartPos: 0
+    - _FrontLight: 0
+    - _GlossMapScale: 0.414
+    - _Glossiness: 34.6
+    - _GlossyReflections: 1
+    - _GradientHeight: 1
+    - _GradientStartY: 0
+    - _InvFade: 1
+    - _LayoutTexturePower: 1
+    - _Level: 0.5
+    - _LightIntensity: 0.82
+    - _LightMaxDistance: 10
+    - _LightProbePower: 0.5
+    - _LightmapPower: 1
+    - _MainTexPower: 0.909
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Radius: 1
+    - _Ratio: 0
+    - _RightLight: 0
+    - _RimLightingEnabled: 0.34
+    - _RimPower: 4.6
+    - _Saturation: 1
+    - _ShadowPower: 0
+    - _Shininess: 0
+    - _SmoothnessTextureChannel: 0
+    - _Specular: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TopLight: 0
+    - _UVSec: 0
+    - _UseDirLight: 0
+    - _UseFogDistance: 0
+    - _UseFogStaticStart: 0
+    - _UseLightMap: 0
+    - _ZWrite: 1
+    - _additiveBlend: 0
+    - _lightFallof: 0.05
+    - _lightFalloff: 1
+    - _lightIntensity: 1
+    m_Colors:
+    - _AmbientColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BottomColor: {r: 0, g: 0, b: 0, a: 0}
+    - _CenterPosition: {r: 4.15, g: 4.06, b: 1.1, a: 0.46}
+    - _Color: {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 1}
+    - _DimColor: {r: 0.2478284, g: 0.35791206, b: 0.3679245, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FogStaticStartPos: {r: 0, g: 0, b: 0, a: 1}
+    - _FrontColor: {r: 1, g: 1, b: 1, a: 0}
+    - _FrontColorBottom: {r: 0.7, g: 0.7, b: 0.7, a: 0}
+    - _LightDirF: {r: 0, g: 0, b: -1, a: 1}
+    - _LightDirR: {r: 1, g: 0, b: 0, a: 1}
+    - _LightDirT: {r: 0, g: 1, b: 0, a: 1}
+    - _LightPos: {r: 0, g: 0, b: 0, a: 1}
+    - _LightTint: {r: 1, g: 1, b: 1, a: 0}
+    - _LightmapColor: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainColorBottom: {r: 1, g: 0.73, b: 0.117, a: 0}
+    - _RightColor: {r: 0.9, g: 0.9, b: 0.9, a: 0}
+    - _RightColorBottom: {r: 0.9, g: 0.9, b: 0.9, a: 0}
+    - _RimColor: {r: 0.7075472, g: 0.66660523, b: 0.09077966, a: 0}
+    - _RimColorBottom: {r: 1, g: 1, b: 1, a: 0}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColorc: {r: 1, g: 1, b: 1, a: 0}
+    - _TintColor: {r: 0.1470588, g: 0.1470588, b: 0.1470588, a: 0.5}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TopColorBottom: {r: 1, g: 1, b: 1, a: 0}
+    - _center: {r: 4.52, g: 4.52, b: 0.24, a: 0.57}
+    - _lightColor: {r: 1.216786, g: 1.216786, b: 1.216786, a: 1}
+  m_BuildTextureStacks: []

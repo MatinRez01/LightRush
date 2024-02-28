@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultBike
+  m_Shader: {fileID: 4800000, guid: 14ede8ad17c0f4241b6c3521a49a01ca, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 89c4394e59bc10547b65e8d4bcbc7945, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Brightness: 0
+    - _EmissionPower: 5.66
+    - _RimLightingEnabled: 0.221
+    - _RimPower: 1.5
+    - _Saturation: 1
+    - _Voxelization: 0
+    - _VoxelsAmount: 100
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0, g: 0.68805265, b: 1, a: 1}
+    - _RimLight: {r: 0.07699996, g: 0.6507567, b: 1, a: 1}
+  m_BuildTextureStacks: []

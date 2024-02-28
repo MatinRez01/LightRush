@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3773a5f624757a4b8810f4070d57f90, type: 3}
+  m_Name: Achievements Database
+  m_EditorClassIdentifier: 
+  Achievements:
+  - data:
+      description: Play 5 runs
+      id: 0
+      relatedEvents:
+      - GameStart
+      saveProgress: 1
+      coinAddAmt: 25
+    requirement: 5
+    type: 2
+  - data:
+      description: Unlock an item
+      id: 1
+      relatedEvents:
+      - UnlockItem
+      saveProgress: 0
+      coinAddAmt: 30
+    requirement: 1
+    type: 2
+  - data:
+      description: Destroy 20 enemy in total
+      id: 2
+      relatedEvents:
+      - Enemy
+      saveProgress: 1
+      coinAddAmt: 35
+    requirement: 20
+    type: 2
+  - data:
+      description: Use 100m light trail in total
+      id: 3
+      relatedEvents:
+      - LightTrailSwitch
+      saveProgress: 1
+      coinAddAmt: 35
+    requirement: 10
+    type: 4
+  - data:
+      description: Score 100+ in 1 run
+      id: 4
+      relatedEvents: []
+      saveProgress: 0
+      coinAddAmt: 35
+    requirement: 100
+    type: 1
+  - data:
+      description: Score 1000+ in total
+      id: 5
+      relatedEvents:
+      - GameEnd
+      saveProgress: 1
+      coinAddAmt: 35
+    requirement: 1000
+    type: 1
+  - data:
+      description: Collect 10 coins in 1 run
+      id: 6
+      relatedEvents:
+      - Coin
+      saveProgress: 0
+      coinAddAmt: 35
+    requirement: 20
+    type: 2
+  - data:
+      description: Destroy 10 enemy with light trail in 1 run
+      id: 7
+      relatedEvents:
+      - LightTrailKill
+      saveProgress: 0
+      coinAddAmt: 35
+    requirement: 10
+    type: 2
+  - data:
+      description: Don't get hit for 25 sec in 1 run
+      id: 8
+      relatedEvents:
+      - PlayerHit
+      saveProgress: 0
+      coinAddAmt: 35
+    requirement: 25
+    type: 3
+  - data:
+      description: Survive more than 360 sec in total
+      id: 9
+      relatedEvents:
+      - GameStart
+      - GameEnd
+      saveProgress: 1
+      coinAddAmt: 35
+    requirement: 360
+    type: 0
+  - data:
+      description: Collect 10 power ups in total
+      id: 10
+      relatedEvents:
+      - LightTrailPowerup
+      saveProgress: 1
+      coinAddAmt: 35
+    requirement: 10
+    type: 2
+  - data:
+      description: Survive more than 60 sec in 1 run
+      id: 11
+      relatedEvents:
+      - GameStart
+      - GameEnd
+      saveProgress: 0
+      coinAddAmt: 35
+    requirement: 60
+    type: 0

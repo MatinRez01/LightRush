@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a38391c4ce5514db0b90e81f0b543c, type: 3}
+  m_Name: Game Items
+  m_EditorClassIdentifier: 
+  spawnables:
+  - item: 0
+    prefab: {fileID: 1665270492318690, guid: dc45cf0b000a5bb4eaac17fed553a1b9, type: 3}
+    itemCounts: {x: 4, y: 4}
+    automaticSpawn: 1
+    ReadyToSpawnOnInit: 1
+    isEnemy: 1
+    spawnCooldown:
+      Min: 0
+      Max: 3.079955
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 1
+    prefab: {fileID: 1665270492318690, guid: 26376ffa3c7b9804cacdd8e5bd498470, type: 3}
+    itemCounts: {x: 1, y: 4}
+    automaticSpawn: 1
+    ReadyToSpawnOnInit: 0
+    isEnemy: 1
+    spawnCooldown:
+      Min: 1.1103181
+      Max: 2.537869
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 9
+    prefab: {fileID: 1665270492318690, guid: 5aba4eae927f2874eb5d75cb4d7e69d9, type: 3}
+    itemCounts: {x: 1, y: 4}
+    automaticSpawn: 1
+    ReadyToSpawnOnInit: 0
+    isEnemy: 1
+    spawnCooldown:
+      Min: 0
+      Max: 1.0756292
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 2
+    prefab: {fileID: 1991575375191180, guid: 798c8b6e4c578c84ea1c8255925b731a, type: 3}
+    itemCounts: {x: 8, y: 8}
+    automaticSpawn: 1
+    ReadyToSpawnOnInit: 1
+    isEnemy: 0
+    spawnCooldown:
+      Min: 3.0137193
+      Max: 5.948131
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 3
+    prefab: {fileID: 140472, guid: 58979b177c1b4ad42806d3164d2a19ec, type: 3}
+    itemCounts: {x: 0, y: 2}
+    automaticSpawn: 1
+    ReadyToSpawnOnInit: 1
+    isEnemy: 0
+    spawnCooldown:
+      Min: 3.9725592
+      Max: 5.6380353
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 4
+    prefab: {fileID: 4566802561622152366, guid: 2ddc893a659194d409117b2d0e495d06,
+      type: 3}
+    itemCounts: {x: 5, y: 5}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 5
+    prefab: {fileID: 4566802561622152366, guid: 057f31a4c8719f64881c9d3897609cc9,
+      type: 3}
+    itemCounts: {x: 1, y: 1}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 7
+    prefab: {fileID: 1850178221470062, guid: 20b9d3261713dfa4984dc1dc2ca3be83, type: 3}
+    itemCounts: {x: 6, y: 6}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 6
+    prefab: {fileID: 1734532791694354, guid: e51682d30d5550646a4fd28407cbb29b, type: 3}
+    itemCounts: {x: 13, y: 13}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 8
+    prefab: {fileID: 1850178221470062, guid: 81b9053c0c3a7544db9a4aab1a302499, type: 3}
+    itemCounts: {x: 2, y: 2}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 10
+    prefab: {fileID: 5893756439308472417, guid: 4816c01157044d7438e99a8d952ed43b,
+      type: 3}
+    itemCounts: {x: 0, y: 5}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
+  - item: 11
+    prefab: {fileID: 2345247660097574997, guid: b0b0d8bd79f611b4490245793dbe3c60,
+      type: 3}
+    itemCounts: {x: 2, y: 10}
+    automaticSpawn: 0
+    ReadyToSpawnOnInit: 0
+    isEnemy: 0
+    spawnCooldown:
+      Min: 0
+      Max: 0
+    itemMinCount: 0
+    itemMaxCount: 0
