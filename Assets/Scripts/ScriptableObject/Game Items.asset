@@ -69,7 +69,7 @@ MonoBehaviour:
     itemMinCount: 0
     itemMaxCount: 0
   - item: 4
-    prefab: {fileID: 4566802561622152366, guid: 2ddc893a659194d409117b2d0e495d06,
+    prefab: {fileID: 3045857433522429614, guid: 6962038cb6fe2ef4dae94b040883bd9a,
       type: 3}
     itemCounts: {x: 5, y: 5}
     automaticSpawn: 0

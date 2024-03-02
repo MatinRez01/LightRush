@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: alphaBlendGlow_mat
-  m_Shader: {fileID: 4800000, guid: 2f8eeac2588ed924bb19aaabc6043825, type: 3}
+  m_Name: Unlit_CircleRing
+  m_Shader: {fileID: 4800000, guid: 5ffee4ee2ba435045818478e1ef82400, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,13 +20,17 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d44df3548012b0149b6f9a694183e186, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0.5
-    - _Glow: 5
+    - _AlphaPower: 2.06
+    - _Cull: 2
+    - _Power: 1.39
+    - _Refraction: 1.07
+    - _RimIntensity: 0.542
+    - _RimPowerBlend: 2.34
     m_Colors: []
   m_BuildTextureStacks: []

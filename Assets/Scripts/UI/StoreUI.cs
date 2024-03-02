@@ -19,6 +19,16 @@ public class StoreUI : MonoBehaviour
     DG.Tweening.Sequence sequence;
     [SerializeField] private Color hoverColor;
     [SerializeField] private Color unhoverColor;
+
+
+    private List<StoreButton> trailsButtons;
+    private List<StoreButton> bikesButtons;
+
+    private void Start() {
+        StoreManager storeManager = GetComponent<StoreManager>();
+        trailsButtons = storeManager.GetTrailsButtons();
+        bikesButtons = storeManager.GetBikesButtons();
+    }
     public void LockScreen()
     {
         lockImage.SetActive(true);
@@ -46,9 +56,29 @@ public class StoreUI : MonoBehaviour
         sequence.onComplete += () => 
         {
             OnAnimationComplete(unlockItem.itemImage);
-            unlockItem.Select();
+            SelectItem(unlockItem);
             callback.Invoke();
         };
+    }
+    public void SelectItem(StoreButton button)
+    {
+        if (button.isTrail)
+        {
+            trailsButtons.ForEach((trailButton) =>
+            {
+                trailButton.Deselect();
+            });
+            button.Select();
+        }
+        else
+        {
+            bikesButtons.ForEach((bikesButton) =>
+            {
+                bikesButton.Deselect();
+
+            });
+            button.Select();
+        }
     }
     private void OnAnimationComplete(Sprite sprite)
     {

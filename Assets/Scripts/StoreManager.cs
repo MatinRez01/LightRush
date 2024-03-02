@@ -134,27 +134,13 @@ public class StoreManager : MonoBehaviour
         {
             int i = bikes.IndexOf(storeItems[index].GameObject);
             SelectBike(i);
-            foreach (var item in storeItems)
-            {
-                if (!item.isTrail)
-                {
-                    item.Deselect();
-                }
-            }
         }
         else
         {
-            foreach (var item in storeItems)
-            {
-                if (item.isTrail)
-                {
-                    item.Deselect();
-                }
-            }
             int i = trails.IndexOf(storeItems[index].GameObject);
             SelectTrail(i);
         }
-        storeItems[index].Select();
+        storeUI.SelectItem(storeItems[index]);
 
 
     }
@@ -234,5 +220,29 @@ public class StoreManager : MonoBehaviour
             }
         }
         return locked;
+    }
+    public List<StoreButton> GetBikesButtons()
+    {
+        List<StoreButton> bikes = new List<StoreButton>();
+        foreach (var item in storeItems)
+        {
+            if (!item.isTrail)
+            {
+                bikes.Add(item);
+            }
+        }
+        return bikes;
+    }
+    public List<StoreButton> GetTrailsButtons()
+    {
+        List<StoreButton> trails = new List<StoreButton>();
+        foreach (var item in storeItems)
+        {
+            if (item.isTrail)
+            {
+                trails.Add(item);
+            }
+        }
+        return trails;
     }
 }

@@ -16,11 +16,11 @@ public class playOneShotAnimation : MonoBehaviour
 
     public void PlayAnimation()
     {
-        if(animationComponent == null)
+        animationComponent.enabled = true;
+        if (animationComponent == null)
         {
             animationComponent = GetComponent<Animation>();
         }
-        animationComponent.enabled = true;
         animationComponent?.Play();
         Timer.Register(clips[0].length, () =>
         {

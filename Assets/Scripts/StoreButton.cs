@@ -66,6 +66,7 @@ public class StoreButton : MonoBehaviour
     public void Select()
     {
         TurnOnButton();
+        lightImage.DOFade(0, 0.1f);
     }
     public void Deselect()
     {
