@@ -10,8 +10,8 @@ public class GameEvents : MonoBehaviour
     public Action<EventData> OnEvent;
     public Action<GameObject, GlobalGameItemsData.Item> OnSpawnableItemCollect;
     public Action<string, int> OnPropertyChange;
-    public Action<GameObject, EnemyData> OnEnemyDie;
-
+    public Action<GameObject, EnemyData, Vector3> OnEnemyDie;
+    
     public static GameEvents Instance
     {
         get
@@ -44,7 +44,7 @@ public class GameEvents : MonoBehaviour
         OnEnemyDie += EnemyDie;
         OnSpawnableItemCollect += ItemCollect;
     }
-    void EnemyDie(GameObject go, EnemyData data)
+    void EnemyDie(GameObject go, EnemyData data, Vector3 p)
     {
         EventData eventData = new EventData(data.Name.ToString(), 0);
         TriggerEvent(eventData);

@@ -139,7 +139,7 @@ public class Spawner : MonoBehaviour
     public void SpawnImpactFx(Vector3 position, Quaternion rot, Color color)
     {
         GameObject fx = SpawnFx(GlobalGameItemsData.Item.ImpactFx.ToString(), position, rot );
-        fx.GetComponent<ParticleSetup>().color = color;
+      //  fx.GetComponent<ParticleSetup>().color = color;
     }
     public void ResetTrailPowerUpTimer()
     {
@@ -157,7 +157,6 @@ public class Spawner : MonoBehaviour
         SpawnableData data = autoSpawnItemsList[(GlobalGameItemsData.Item)
             Enum.Parse(typeof(GlobalGameItemsData.Item), item)];
 
-        Debug.Log(item.ToString() + data.itemMinCount);
     }
     public void DecreaseMinimumCountsOf(string item)
     {
@@ -167,7 +166,6 @@ public class Spawner : MonoBehaviour
         ActivateSpawningOf(item);
         SpawnableData data = autoSpawnItemsList[(GlobalGameItemsData.Item)
     Enum.Parse(typeof(GlobalGameItemsData.Item), item)];
-        Debug.Log(item.ToString() + data.itemMinCount);
 
     }
     public void ActivateSpawningOf(string item)

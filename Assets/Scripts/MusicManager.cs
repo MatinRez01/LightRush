@@ -1,3 +1,4 @@
+using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.X500;
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -17,23 +18,37 @@ public class MusicManager : MonoBehaviour
 
     float startingValue;
     Sequence pitchingSequnce;
+    AudioClip currentClip;
     public void Setup()
     {
-
         audioSource = GetComponent<AudioSource>();
-        AudioClip currentClip = audioSource.clip;
-        int rnd = UnityEngine.Random.Range(0,musics.Length);
-        while (musics[rnd] == currentClip)
-        {
-             rnd = UnityEngine.Random.Range(0, musics.Length);
-        }
-        audioSource.clip = musics[rnd];
-        Debug.Log(rnd);
-        audioSource.Play();
         lowPassFilter = GetComponent<AudioLowPassFilter>();
+        Init();
+        PlayRandomMusic();
+        lowPassFilter.enabled = true;
+        SetupEvents();
+    }
+    internal void Init()
+    {
         startingValue = lowPassFilter.cutoffFrequency;
+        currentClip = audioSource.clip;
+    }
+    internal void SetupEvents()
+    {
         GameEvents.Instance.OnEvent += OnEvent;
         PlayerCar.OnPlayerDamage += DoPitching;
+    }
+    internal void PlayRandomMusic()
+    {
+        int rnd = UnityEngine.Random.Range(0, musics.Length);
+
+        while (musics[rnd] == currentClip)
+        {
+            rnd = UnityEngine.Random.Range(0, musics.Length);
+        }
+        audioSource.clip = musics[rnd];
+        audioSource.Play();
+
     }
     private void OnDisable()
     {
@@ -67,7 +82,6 @@ public class MusicManager : MonoBehaviour
         pitchingSequnce.Append(DOTween.To(() => audioSource.pitch, x => audioSource.pitch = x, pitchingAmount, duration));
         pitchingSequnce.AppendInterval(1f);
         pitchingSequnce.Append(DOTween.To(() => audioSource.pitch, x => audioSource.pitch = x, 1, .5f));
-        Debug.Log("Pitching");
         pitchingSequnce.Play();
     }
 }

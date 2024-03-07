@@ -5,12 +5,9 @@ using UnityEngine.UI;
 
 public class HPVisualControl : MonoBehaviour
 {
-    List<playOneShotAnimation> childs = new List<playOneShotAnimation>(3);
-    [SerializeField] Image glowImage;
+    List<playHealthAnimation> childs = new List<playHealthAnimation>(3);
     [SerializeField] Transform container;
 
-    float startGlowAlpha;
-    float eachDecreaseAlpha;
     private int health
     {
         get
@@ -20,23 +17,24 @@ public class HPVisualControl : MonoBehaviour
     }
     private void OnEnable()
     {
-        startGlowAlpha = glowImage.color.a;
         for (var i = 0; i < container.transform.childCount; i++)
         {
-            childs.Add(container.GetChild(i).GetComponent<playOneShotAnimation>());
+            childs.Add(container.GetChild(i).GetComponent<playHealthAnimation>());
         }
-        eachDecreaseAlpha = (startGlowAlpha) / (2);
-        
         PlayerCar.OnPlayerDamage += HealthDecrease;
     }
+    private void OnDisable()
+    {
+        PlayerCar.OnPlayerDamage -= HealthDecrease;
 
+    }
     private void HealthDecrease()
     {
         if(health > 0){
-            childs[childs.Count - 1].PlayAnimation();
+            childs[childs.Count - 1].PlayAnimationAndDisable();
+            childs[childs.Count - 1].alphaFlicker.StartFlickering();
+            
             childs.RemoveAt(childs.Count - 1);
-            Debug.Log(glowImage.color.a - eachDecreaseAlpha);
-            glowImage.DOFade(glowImage.color.a - eachDecreaseAlpha, 1);
         }
         
     }

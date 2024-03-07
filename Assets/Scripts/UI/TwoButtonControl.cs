@@ -42,7 +42,7 @@ public class TwoButtonControl : MonoBehaviour
 
         if (rightButton.Pressed)
         {
-            if (rightClickImage.gameObject.active)
+            if (rightClickImage.gameObject.activeSelf)
             {
                 rightClickImage.gameObject.SetActive(false);
             }
@@ -50,7 +50,7 @@ public class TwoButtonControl : MonoBehaviour
         }
         else if(leftButton.Pressed)
         {
-            if (leftClickImage.gameObject.active)
+            if (leftClickImage.gameObject.activeSelf)
             {
                 leftClickImage.gameObject.SetActive(false);
             }

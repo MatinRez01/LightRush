@@ -21,6 +21,7 @@ public class PlayerCar : Car
     {
         base.OnEnable();
         currentHealth = Health;
+        gameManager = GameObject.FindWithTag("manager").GetComponent<GameManager>();
     }
     
 
@@ -59,7 +60,7 @@ public class PlayerCar : Car
         else
         {
             if(OnPlayerDamage != null){
-                OnPlayerDamage?.Invoke();
+                OnPlayerDamage.Invoke();
             }
             GameEvents.TriggerEvent("PlayerHit");
             TurnToInvincible();
@@ -68,7 +69,6 @@ public class PlayerCar : Car
     protected override void Die()
     {
         Spawner.Instance.SpawnFx(GlobalGameItemsData.Item.ExplosionBlueFx.ToString(), transform.position, Quaternion.identity);
-        gameManager = GameObject.FindWithTag("manager").GetComponent<GameManager>();
         gameManager.GameLost(this);
     }
 

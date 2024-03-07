@@ -22,7 +22,6 @@ public class SfxManager : MonoBehaviour
 
     public void SoundMute(bool value)
     {
-        Debug.Log("Sound is mute:" + value);
         mixer.SetFloat("Volume", value ? -80.0f : 0.00f);
     }
 

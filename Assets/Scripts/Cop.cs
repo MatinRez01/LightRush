@@ -143,7 +143,7 @@ public class Cop : Car
     
     protected override void Die()
     {
-        gameEvents.OnEnemyDie(gameObject, enemyData);
+        gameEvents.OnEnemyDie(gameObject, enemyData, transform.position);
     }
   
  

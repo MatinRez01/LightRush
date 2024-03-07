@@ -11,23 +11,32 @@ public class playOneShotAnimation : MonoBehaviour
     public Action OnAnimationDone;
     private void OnEnable()
     {
-        animationComponent = GetComponent<Animation>();
+        Setup();
     }
-
+    private void Setup()
+    {
+        animationComponent = GetComponent<Animation>();
+        animationComponent.enabled = true;
+    }
     public void PlayAnimation()
     {
-        animationComponent.enabled = true;
-        if (animationComponent == null)
+        try
         {
-            animationComponent = GetComponent<Animation>();
+            animationComponent.Play();
+            Timer.Register(clips[0].length, () =>
+            {
+                OnAnimationDone?.Invoke();
+            });
         }
-        animationComponent?.Play();
-        Timer.Register(clips[0].length, () =>
+        catch
         {
-            OnAnimationDone?.Invoke();
-        });
+            Setup();
+            PlayAnimation();
+        }
+
     }
-    public void PlayAnimation(string animationName) {
+    public void PlayAnimation(string animationName)
+    {
         animationComponent.enabled = true;
         animationComponent?.Play(animationName);
         Timer.Register(animationComponent.clip.length, () =>
@@ -35,12 +44,11 @@ public class playOneShotAnimation : MonoBehaviour
             OnAnimationDone?.Invoke();
         });
     }
-    
+
     public void PlayAnimationsAndDisable()
     {
         StartCoroutine(_PlayAllAnimations());
 
-        Debug.Log("PlayedAnimationsAndDisable");
     }
     private void PlayAnimationWithoutCallback(string animationName)
     {
@@ -54,7 +62,7 @@ public class playOneShotAnimation : MonoBehaviour
             PlayAnimationWithoutCallback(clips[i].name);
             yield return new WaitForSeconds(clips[i].length);
         }
-       
+
         yield return null;
 
     }

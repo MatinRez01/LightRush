@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
         coinLabel.text = TotalCoin.ToString();
         PlayerPrefs.SetInt("totalCoin", TotalCoin);
     }
-    private void OnEnemyDie(GameObject go, EnemyData enemy)
+    private void OnEnemyDie(GameObject go, EnemyData enemy, Vector3 p)
     {
         spawner.SpawnFx(GlobalGameItemsData.Item.ExplosionRedFx.ToString(),
         go.transform.position, Quaternion.identity, go);
@@ -241,7 +241,6 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey(HIGHEST_RECORD))
         {
             HighestScore = currentScore;
-            Debug.Log("no save ");
             newRecord.SetActive(true);
         }
         else

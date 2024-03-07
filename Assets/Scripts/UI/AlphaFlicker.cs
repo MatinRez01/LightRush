@@ -9,9 +9,8 @@ public class AlphaFlicker : MonoBehaviour
     [SerializeField] private Component component;
     [MinMaxSlider(0f, 1f)] public Vector2 randomAmplitudeRange;
     [MinMaxSlider(0f, 50f)] public Vector2Int seqmentsAmount;
-    [SerializeField] private string targetProperty;
     [SerializeField] private float duration;
-    [SerializeField] Material mat;
+    [SerializeField] private bool autoStart = true;
     private float _value;
     private Color _color;
     enum Component
@@ -49,9 +48,16 @@ public class AlphaFlicker : MonoBehaviour
         { 
             image = GetComponent<Image>();
         }
-        StartFlickering();
+        if (autoStart)
+        {
+            _StartFlickering();
+        }
     }
-    private void StartFlickering()
+    public void StartFlickering()
+    {
+        _StartFlickering();
+    }
+    internal void _StartFlickering()
     {
         if(component == Component.Text)
         {

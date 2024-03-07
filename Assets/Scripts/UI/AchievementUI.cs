@@ -39,12 +39,10 @@ public class AchievementUI : MonoBehaviour
     }
     void AnAchievementDone(float addAmount)
     {
-        Debug.Log("An achievement Done");
         ShouldShowAchievementDone = true;
         DoneAchievementCount++;
         if(challengeCounter.gameObject.activeInHierarchy)
         {
-            Debug.Log("Menu Animation Shown");
             ShowAchievementDoneInMenu();
         }
         ShowAchievementDonePopup();

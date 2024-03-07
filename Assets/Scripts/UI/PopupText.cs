@@ -34,7 +34,7 @@ public class PopupText : MonoBehaviour
         myText.DOFade(0, animationDuration).SetEase(fadeCurve).OnComplete(() =>
         {
             transform.localPosition = initialPos;
-            Spawner.Instance.Despawn(gameObject.transform.parent.gameObject);
+            Spawner.Instance.Despawn(gameObject);
         });
         if (backImage != null)
         {

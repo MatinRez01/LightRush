@@ -150,8 +150,6 @@ public class StoreManager : MonoBehaviour
         if (gameManager.TotalCoin < 100) return;
         isUnlockingAnItem = true;
         GameEvents.TriggerEvent("UnlockItem");
-        GameManager.Instance.DecreaseCoin(100);
-        storeUI.LockScreen();
         float rnd = Random.Range(0, 10);
         bool isItBike = rnd > 6;
         int rndIndex;
@@ -162,7 +160,10 @@ public class StoreManager : MonoBehaviour
             isItBike = !isItBike;
             locked = lockedList(isItBike);
         }
+        if (locked.Count == 0) return;
+        GameManager.Instance.DecreaseCoin(100);
         rndIndex = Random.Range(0, locked.Count);
+        storeUI.LockScreen();
         storeUI.UnlockAnItem(lockedList(), locked[rndIndex], () =>
         {
             locked[rndIndex].UnlockItem();

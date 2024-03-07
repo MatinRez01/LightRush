@@ -43,11 +43,9 @@ public class LoadingScreen : MonoBehaviour
 
     private IEnumerator LoadSceneAsyncCoroutine(string sceneNameString)
     {
-        Debug.Log("loading started");
         AsyncOperation o = SceneManager.LoadSceneAsync(sceneNameString);
         while (!o.isDone)
         {
-            Debug.Log("loading state" + o.progress);
             yield return null;
         }
         SceneManager.UnloadSceneAsync(currentSceneIndex);

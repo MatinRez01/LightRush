@@ -1,10 +1,7 @@
 ﻿using DG.Tweening;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -18,16 +15,32 @@ namespace Assets.Scripts
         [SerializeField, Range(0,1)] private float glitchMagnitude;
         [SerializeField] private float blurTime;
         [SerializeField] private float blurAmount;
+        [SerializeField] private GameObject Player;
 
         private MobilePostProcessing postFx;
         private void OnEnable()
         {
             instance = this;
             postFx = GetComponent<MobilePostProcessing>();
+            GameEvents.Instance.OnEnemyDie += OnEnemyDie;
         }
-        
-
-        IEnumerator _Shake()
+        private void OnDisable()
+        {
+            if (GameEvents.Instance != null)
+            {
+                GameEvents.Instance.OnEnemyDie -= OnEnemyDie;
+            }
+        }
+    
+        void OnEnemyDie(GameObject go, EnemyData data, Vector3 pos)
+        {
+            float shakeMag = Vector3.Distance(Player.transform.position, pos);
+            shakeMag /= 5;
+            shakeMag = Mathf.Clamp(shakeMag, 0, 5);
+            Debug.Log(shakeMagnitude / shakeMag);
+            Shake(shakeMagnitude / shakeMag, shakeDuration * 2);
+        }
+        IEnumerator _Shake(float shakeMagnitude, float shakeDuration)
         {
             Vector3 initialPosition = transform.localPosition;
 
@@ -43,10 +56,10 @@ namespace Assets.Scripts
 
             transform.localPosition = initialPosition;
         }
-        public void Shake()
+        public void Shake(float shakeMagnitude, float shakeDuration)
         {
-            StartCoroutine(_Shake());
-    }
+            StartCoroutine(_Shake(shakeMagnitude, shakeDuration));
+        }
 
         public void StartGame()
         {
@@ -55,7 +68,7 @@ namespace Assets.Scripts
 
         public void GameLost()
         {
-            Shake();
+            Shake(shakeMagnitude*1.5f, shakeDuration*1.5f);
             postFx.Blur = true;
             Sequence s1 = DOTween.Sequence();
             s1.Append(DOVirtual.Float(0, blurAmount, blurTime, v => postFx.BlurAmount = v));
@@ -65,7 +78,7 @@ namespace Assets.Scripts
 
         public void OnPlayerDamage(float invincTime)
         {
-            Shake();
+            Shake(shakeMagnitude, shakeDuration);
             float fxRaiseT = invincTime / 2;
             float fxFallT = invincTime / 2;
             postFx.ChromaticAberration = true;

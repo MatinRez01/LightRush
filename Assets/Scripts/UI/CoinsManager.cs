@@ -55,7 +55,7 @@ public class CoinsManager : MonoBehaviour
 		GameObject coin;
 		for (int i = 0; i < maxCoins; i++) {
 			coin = Instantiate (animatedCoinPrefab);
-			coin.transform.parent = parent;
+			coin.transform.SetParent (parent, false);
 			coin.SetActive (false);
 			coinsQueue.Enqueue (coin);
 		}

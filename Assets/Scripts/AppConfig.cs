@@ -5,9 +5,12 @@ using UnityEngine;
 public class AppConfig : MonoBehaviour
 {
     [MinMaxSlider(0.6f, 1), SerializeField] Vector2 resolutionMinAndMax;
+    [SerializeField] public int defaultResolution;
     [SerializeField] private PlanarReflection pl;
-    [SerializeField] private FastBloom bloom;
+    [SerializeField] private MobilePostProcessing mobilePostProcessing;
+    [SerializeField] private FastBloom fastBloom;
     [SerializeField] private SfxManager sfxManager;
+    [SerializeField] private bool debugMode;
 
     float resolutionPercentage;
     private string fps_string;
@@ -61,8 +64,10 @@ public class AppConfig : MonoBehaviour
         Application.targetFrameRate = 60;
         
         SetResolution();
-        m_FpsNextPeriod = Time.realtimeSinceStartup + fpsMeasurePeriod;
-
+        if (debugMode)
+        {
+            m_FpsNextPeriod = Time.realtimeSinceStartup + fpsMeasurePeriod;
+        }
         sfxManager.SoundMute(!SoundOn);
         MMVibrationManager.SetHapticsActive(Vibrate);
         SetResolution();
@@ -111,23 +116,20 @@ public class AppConfig : MonoBehaviour
     }
     private void SetResolution()
     {
-        //  Resolution nativeRes = Display.main. Screen.currentResolution;
         if (BatterySaving)
         {
             resolutionPercentage = resolutionMinAndMax.x;
-            bloom.enabled = false;
         }
         else
         {
             resolutionPercentage = resolutionMinAndMax.y;
-            bloom.enabled = true;
         }
-        //calculate 80% of the native resolution
-        int width = (int)(Display.main.systemWidth * resolutionPercentage);
-        int height = (int)(Display.main.systemHeight * resolutionPercentage);
 
-        //set the resolution to 80% of the native resolution
-        Screen.SetResolution(width, height, true);
+         float aspect = Screen.height / (float)Screen.width;
+          Vector2 finalResolution = new Vector2(defaultResolution / aspect, defaultResolution) * resolutionPercentage;
+        //Vector2 finalResolution = new Vector2(Screen.width, Screen.height) * resolutionPercentage;
+
+        Screen.SetResolution((int)finalResolution.x, (int)finalResolution.y, true);
     }
     public void BatterySavingChange()
     {
@@ -135,11 +137,17 @@ public class AppConfig : MonoBehaviour
         SetResolution();
         if (BatterySaving) 
         {
-            pl.ReflectionTexResolution = 256;
+            pl.ReflectionTexResolution = 128;
+            mobilePostProcessing.enabled = false;
+            //Application.targetFrameRate = 30;
+            fastBloom.enabled = false;
         }
         else
         {
             pl.ReflectionTexResolution = 512;
+            mobilePostProcessing.enabled = true;
+       //     Application.targetFrameRate = 60;
+            fastBloom.enabled = true;
         }
     }
     public void VibrateSettingChange()
@@ -153,6 +161,7 @@ public class AppConfig : MonoBehaviour
     }
     private void Update()
     {
+        if (!debugMode) return;
         resolution_Text = Screen.width.ToString() + "x" + Screen.height.ToString();
 
         // measure average frames per second
@@ -167,13 +176,14 @@ public class AppConfig : MonoBehaviour
     }
     private void OnGUI()
     {
-           GUIStyle style = new GUIStyle();
+        if (!debugMode) return;
+        GUIStyle style = new GUIStyle();
         style.fontSize = Screen.width / 20;
         style.fontStyle = FontStyle.Bold;
         style.normal.textColor = Color.white;
 
         GUI.Label(new Rect(50, 5, 500, 500), fps_string, style);
-        GUI.Label(new Rect(Screen.width - Screen.width/3.5f, 5, 500, 500), resolution_Text, style);
+        GUI.Label(new Rect(Screen.width - Screen.width / 3.5f, 5, 500, 500), resolution_Text, style);
     }
 
 

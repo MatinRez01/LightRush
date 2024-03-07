@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PopupTextManager : MonoBehaviour
+public class PopupTextManager
 {
     [SerializeField] public GlobalGameItemsData.Item item;
 
