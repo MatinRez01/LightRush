@@ -6859,6 +6859,7 @@ GameObject:
   - component: {fileID: 286012745}
   - component: {fileID: 286012744}
   - component: {fileID: 286012743}
+  - component: {fileID: 286012746}
   m_Layer: 5
   m_Name: Btn_Rate
   m_TagString: Untagged
@@ -6983,6 +6984,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286012741}
   m_CullTransparentMesh: 0
+--- !u!114 &286012746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286012741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14d1cd929daffe4d80ee2cea475adc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &286545324
 GameObject:
   m_ObjectHideFlags: 0
@@ -8768,7 +8781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 384.38077, y: -59.08}
+  m_AnchoredPosition: {x: 439.8733, y: -59.08}
   m_SizeDelta: {x: 94.59, y: 81.974}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &414551425
@@ -10765,7 +10778,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 52042843fb02ac44691fc4123e03bca5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52042843fb02ac44691fc4123e03bca5, type: 3}
@@ -15435,13 +15448,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002c45b6f1768de4696299f5dc6872db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionMinAndMax: {x: 0.7, y: 0.8}
+  resolutionMinAndMax: {x: 0.6, y: 0.85}
   defaultResolution: 1920
   pl: {fileID: 709676404}
   mobilePostProcessing: {fileID: 1777746516}
   fastBloom: {fileID: 1777746519}
   sfxManager: {fileID: 551357612}
-  debugMode: 1
+  debugMode: 0
 --- !u!4 &732075867
 Transform:
   m_ObjectHideFlags: 0
@@ -36214,8 +36227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 11.089249, y: -59.08}
-  m_SizeDelta: {x: 256.523, y: 64.131}
+  m_AnchoredPosition: {x: 0, y: -59.08}
+  m_SizeDelta: {x: 345.2833, y: 64.131}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1391399431
 MonoBehaviour:
@@ -36237,7 +36250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PERFOMANCE\n       MODE"
+  m_text: PERFOMANCE MODE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c693480281d42544396e43bc6ad470e2, type: 2}
   m_sharedMaterial: {fileID: -136338282064190352, guid: c693480281d42544396e43bc6ad470e2,
@@ -36265,8 +36278,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.21
-  m_fontSizeBase: 36.21
+  m_fontSize: 34.42
+  m_fontSizeBase: 34.42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -41060,15 +41073,15 @@ MonoBehaviour:
   ImageFiltering: 1
   Color: {r: 1, g: 1, b: 1, a: 1}
   Contrast: 0
-  Brightness: 0.087
+  Brightness: 0.01
   Saturation: 0
-  Exposure: 0.04
+  Exposure: 0.1
   Gamma: 0
   Sharpness: 0
   ChromaticAberration: 0
   Offset: 0.2
-  FishEyeDistortion: 0.1
-  GlitchAmount: 0
+  FishEyeDistortion: 0.2
+  GlitchAmount: 0.46
   Distortion: 0
   LensDistortion: 0
   Vignette: 1
@@ -41090,10 +41103,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeMagnitude: 1
   shakeDuration: 0.2
-  distortionMagnitude: 0.211
+  distortionMagnitude: 0.387
   glitchMagnitude: 0.183
   blurTime: 1
-  blurAmount: 0.5
+  blurAmount: 0.62
   Player: {fileID: 162502669}
 --- !u!114 &1777746519
 MonoBehaviour:
@@ -50031,7 +50044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9087661741681294349
 Transform:
   m_ObjectHideFlags: 0

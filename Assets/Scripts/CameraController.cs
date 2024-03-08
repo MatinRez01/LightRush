@@ -37,7 +37,6 @@ namespace Assets.Scripts
             float shakeMag = Vector3.Distance(Player.transform.position, pos);
             shakeMag /= 5;
             shakeMag = Mathf.Clamp(shakeMag, 0, 5);
-            Debug.Log(shakeMagnitude / shakeMag);
             Shake(shakeMagnitude / shakeMag, shakeDuration * 2);
         }
         IEnumerator _Shake(float shakeMagnitude, float shakeDuration)
