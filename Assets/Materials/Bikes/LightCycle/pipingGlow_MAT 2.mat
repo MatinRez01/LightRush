@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pipingGlow_MAT 2
-  m_Shader: {fileID: -6465566751694194690, guid: 4121d79ad3460d447bd58cb53bca3848,
+  m_Shader: {fileID: -6465566751694194690, guid: 2f15de7952291c84192e969ceb3cd6f2,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -108,4 +108,5 @@ Material:
     - _ColorFill: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 3, g: 0.36528715, b: 0, a: 3}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Tile: {r: 10, g: 10, b: 0, a: 0}
   m_BuildTextureStacks: []

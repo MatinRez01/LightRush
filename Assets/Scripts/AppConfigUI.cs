@@ -19,4 +19,5 @@ public class AppConfigUI : MonoBehaviour
         vibrateToggle.isOn = !appConfig.Vibrate;
         batterySavingToggle.isOn = appConfig.BatterySaving;
     }
+   
 }

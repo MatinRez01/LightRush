@@ -233,7 +233,7 @@ public class TimeAchievment : Achievement
 {
     float timeElapsed;
     bool startTicking;
-    public TimeAchievment(AchievementData data, float timeRequireMent, float progress)
+    public TimeAchievment(AchievementData data, float timeRequireMent, float progress) 
     {
         this.data = data;
         this.requirement = timeRequireMent;

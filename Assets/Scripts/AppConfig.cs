@@ -10,6 +10,7 @@ public class AppConfig : MonoBehaviour
     [SerializeField] private MobilePostProcessing mobilePostProcessing;
     [SerializeField] private FastBloom fastBloom;
     [SerializeField] private SfxManager sfxManager;
+    [SerializeField] private FPSAnalyzer fpsAnalyzer;
     [SerializeField] private bool debugMode;
 
     float resolutionPercentage;
@@ -70,7 +71,12 @@ public class AppConfig : MonoBehaviour
         }
         sfxManager.SoundMute(!SoundOn);
         MMVibrationManager.SetHapticsActive(Vibrate);
-        SetResolution();
+        fpsAnalyzer.Setup(BatterySaving);
+        fpsAnalyzer.OnPerfomancePreferred += () => 
+        {
+            BatterySavingChange();
+            NotifyManager.Instance.ShowTip("ACTIVATED PERFOMANCE MODE");
+        } ;
     }
     private void OnEnable()
     {
@@ -108,6 +114,7 @@ public class AppConfig : MonoBehaviour
             SoundOn = true;
             PlayerPrefs.SetInt("SoundOn", SoundOn ? 1 : 0);
         }
+        
     }
     public void SoundSettingChange()
     {
