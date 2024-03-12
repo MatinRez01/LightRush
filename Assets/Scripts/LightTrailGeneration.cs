@@ -87,8 +87,20 @@ public class LightTrailGeneration : MonoBehaviour
     {
         get => active;
     }
-
+    public void SetColor(Color color)
+    {
+        if(meshObject == null)
+        {
+            Setup();
+        }
+        meshObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", color);
+    }
     void Start()
+    {
+        if (meshObject != null) return;
+        Setup();
+    }
+    private void Setup()
     {
         InitLightTrailGeneration();
         ChargeLightTrail();
