@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class playHealthAnimation : MonoBehaviour
 {
-    public AlphaFlicker alphaFlicker;
+   /* public AlphaFlicker alphaFlicker;
     private UIShiny uiShiny;
-    [SerializeField] private bool shinyAutoStart;
+    [SerializeField] private bool shinyAutoStart;*/
     [SerializeField] private float punchAmount = 1;
     [SerializeField] private int punchVibrato = 8;
     [SerializeField] private float punchDuration = 0.5f;
@@ -19,13 +19,13 @@ public class playHealthAnimation : MonoBehaviour
     private void OnEnable()
     {
         image = GetComponent<Image>();
-        uiShiny = alphaFlicker.gameObject.GetComponent<UIShiny>();
+       /* uiShiny = alphaFlicker.gameObject.GetComponent<UIShiny>();
         bool shinyEnabled = shinyAutoStart;
-        uiShiny.enabled = shinyEnabled;
+        uiShiny.enabled = shinyEnabled;*/
     }
     public void PlayAnimationAndDisable()
     {
-        uiShiny.enabled = true;
+        //uiShiny.enabled = true;
         sequence = DOTween.Sequence();
         sequence.Append(transform.DOPunchScale(new Vector3(punchAmount, punchAmount, punchAmount), punchDuration, punchVibrato));
         sequence.Join(image.DOFade(0, fadeDuration));

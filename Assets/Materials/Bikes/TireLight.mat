@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_TireLight 1
+  m_Name: TireLight
   m_Shader: {fileID: -6465566751694194690, guid: 2f15de7952291c84192e969ceb3cd6f2,
     type: 3}
   m_ValidKeywords: []
@@ -31,6 +31,7 @@ Material:
     - _BUILTIN_QueueOffset: 0
     m_Colors:
     - _AddColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0}
+    - _BaseColor: {r: 0, g: 2.9960785, b: 4, a: 1}
     - _Color: {r: 0.18326804, g: 0.81621474, b: 0.8301887, a: 0}
     - _Tile: {r: 10, g: 10, b: 0, a: 0}
   m_BuildTextureStacks: []

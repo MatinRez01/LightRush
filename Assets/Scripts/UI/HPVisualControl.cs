@@ -32,7 +32,7 @@ public class HPVisualControl : MonoBehaviour
     {
         if(health > 0){
             childs[childs.Count - 1].PlayAnimationAndDisable();
-            childs[childs.Count - 1].alphaFlicker.StartFlickering();
+           // childs[childs.Count - 1].alphaFlicker.StartFlickering();
             
             childs.RemoveAt(childs.Count - 1);
         }

@@ -1,6 +1,7 @@
 using MoreMountains.NiceVibrations;
 using Tools;
 using UnityEngine;
+[DefaultExecutionOrder(-500)]
 
 public class AppConfig : MonoBehaviour
 {
@@ -75,6 +76,7 @@ public class AppConfig : MonoBehaviour
         fpsAnalyzer.OnPerfomancePreferred += () => 
         {
             BatterySavingChange();
+            GetComponent<AppConfigUI>().batterySavingToggle.isOn = BatterySaving;
             NotifyManager.Instance.ShowTip("ACTIVATED PERFOMANCE MODE");
         } ;
     }
@@ -126,10 +128,19 @@ public class AppConfig : MonoBehaviour
         if (BatterySaving)
         {
             resolutionPercentage = resolutionMinAndMax.x;
+            pl.enabled = false;
+            mobilePostProcessing.enabled = false;
+            //Application.targetFrameRate = 30;
+            fastBloom.enabled = false;
+
         }
         else
         {
             resolutionPercentage = resolutionMinAndMax.y;
+            pl.enabled = true;
+            mobilePostProcessing.enabled = true;
+            //     Application.targetFrameRate = 60;
+            fastBloom.enabled = true;
         }
 
          float aspect = Screen.height / (float)Screen.width;
@@ -142,20 +153,6 @@ public class AppConfig : MonoBehaviour
     {
         BatterySaving = !BatterySaving;
         SetResolution();
-        if (BatterySaving) 
-        {
-            pl.ReflectionTexResolution = 128;
-            mobilePostProcessing.enabled = false;
-            //Application.targetFrameRate = 30;
-            fastBloom.enabled = false;
-        }
-        else
-        {
-            pl.ReflectionTexResolution = 512;
-            mobilePostProcessing.enabled = true;
-       //     Application.targetFrameRate = 60;
-            fastBloom.enabled = true;
-        }
     }
     public void VibrateSettingChange()
     {

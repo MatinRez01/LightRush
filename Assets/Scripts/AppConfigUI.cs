@@ -9,7 +9,7 @@ public class AppConfigUI : MonoBehaviour
     [Header("Setup")]
     [SerializeField] Toggle soundToggle;
     [SerializeField] Toggle vibrateToggle;
-    [SerializeField] Toggle batterySavingToggle;
+    [SerializeField] public Toggle batterySavingToggle;
 
     AppConfig appConfig;
     private void OnEnable()

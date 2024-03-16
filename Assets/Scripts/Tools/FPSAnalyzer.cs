@@ -49,6 +49,26 @@ public class FPSAnalyzer : MonoBehaviour
             PlayerPrefs.SetInt("perfomanceModePreferred", value ? 1 : 0);
         }
     }
+    public bool ChangedSettingsOnce
+    {
+        get
+        {
+            if (PlayerPrefs.HasKey("ChangedSettingsOnce"))
+            {
+                int i = PlayerPrefs.GetInt("ChangedSettingsOnce");
+                return i > 0;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        set
+        {
+
+            PlayerPrefs.SetInt("ChangedSettingsOnce", value ? 1 : 0);
+        }
+    }
     #endregion
     #region Unity Callbacks
     void Start()
@@ -56,11 +76,11 @@ public class FPSAnalyzer : MonoBehaviour
         if (alreadyInPerfomanceMode) return;
         if (AnalyzedPerfomance)
         {
-            if (perfomanceModePreferred)
+            if (perfomanceModePreferred && !ChangedSettingsOnce)
             {
                 ChangeSettings();
-                shouldAnalyze = false;
             }
+            shouldAnalyze = false;
             return;
         }
         GameEvents.Instance.OnEvent += OnEventTriggered;
@@ -107,6 +127,7 @@ public class FPSAnalyzer : MonoBehaviour
     }
     void ChangeSettings()
     {
+        ChangedSettingsOnce = true;
         OnPerfomancePreferred?.Invoke();
     }
     #endregion

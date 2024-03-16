@@ -130,7 +130,7 @@ Material:
     - _DstBlend: 0
     - _Emission: 1
     - _EmissionEnabled: 0
-    - _EmissionPower: 0.4
+    - _EmissionPower: 0.7
     - _Fill: 0
     - _FlipbookMode: 0
     - _FresnelPower: 0.44
@@ -145,7 +145,7 @@ Material:
     - _NormalPower: 1
     - _OcclusionStrength: 1
     - _Outline: 0.05
-    - _OutlineWidth: 0.02
+    - _OutlineWidth: 0.4
     - _Panner: 0.35
     - _Parallax: 0.02
     - _RimLightingEnabled: 0
@@ -175,9 +175,9 @@ Material:
     - _ColorFill: {r: 0, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0.979769, b: 1, a: 1}
     - _EmissionColor1: {r: 0, g: 1, b: 0.89803934, a: 0}
-    - _OutlineColor: {r: 1, g: 0.49282557, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0.58055246, b: 0, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _RimColor: {r: 0, g: 0.9092319, b: 1, a: 1}
+    - _RimColor: {r: 0.27842647, g: 0.5643306, b: 0.6226415, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
   m_BuildTextureStacks: []

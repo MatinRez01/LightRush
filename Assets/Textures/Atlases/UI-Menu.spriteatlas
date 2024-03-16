@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI-Menu
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 751386c14dfee774fa5ac863c0b88818, type: 3}
+    - {fileID: 21300000, guid: 2c0e8c99c6ff12747aaeae9b0296e4f1, type: 3}
+    - {fileID: 21300000, guid: 88ee48ac35f6d444084a1976beafc01d, type: 3}
+    - {fileID: 21300000, guid: 9763d1a1d2c6fe84086370be615b4308, type: 3}
+    - {fileID: 21300000, guid: 9352ec267f541e64f86200fa4b81ce15, type: 3}
+    - {fileID: 21300000, guid: 2654c6cdab1e4d94cbe8efa0b4d36799, type: 3}
+    - {fileID: 21300000, guid: b85b736cdf6f1ea42bdd9233e6f1ac02, type: 3}
+    - {fileID: 21300000, guid: 93840aad5a51a8941b68315d1482d39d, type: 3}
+    - {fileID: 21300000, guid: ef0793c3d0f5024448e3e5c8c0316e8e, type: 3}
+    - {fileID: 21300000, guid: e29818e9402192c47930abef60ab97fc, type: 3}
+    - {fileID: 21300000, guid: 364f42de2f66ab54495b615aa5894947, type: 3}
+    - {fileID: 21300000, guid: 3216957cde6ed1f44844ca8e4d316f5d, type: 3}
+    - {fileID: 21300000, guid: b5131927138750a46b3950d68777e17f, type: 3}
+    - {fileID: 21300000, guid: 73f01c249564c074eb45bab4a9d6b07b, type: 3}
+    - {fileID: 21300000, guid: 4780193e583554d4daf707464e22b15e, type: 3}
+    - {fileID: 21300000, guid: f5fb8738d53f5d84eb61eb222dcbb720, type: 3}
+    - {fileID: 21300000, guid: 3c0495b71c8359a4f80837790b992bc5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9763d1a1d2c6fe84086370be615b4308, type: 3}
+  - {fileID: 21300000, guid: 751386c14dfee774fa5ac863c0b88818, type: 3}
+  - {fileID: 21300000, guid: ef0793c3d0f5024448e3e5c8c0316e8e, type: 3}
+  - {fileID: 21300000, guid: 73f01c249564c074eb45bab4a9d6b07b, type: 3}
+  - {fileID: 21300000, guid: 9352ec267f541e64f86200fa4b81ce15, type: 3}
+  - {fileID: 21300000, guid: b5131927138750a46b3950d68777e17f, type: 3}
+  - {fileID: 21300000, guid: 3c0495b71c8359a4f80837790b992bc5, type: 3}
+  - {fileID: 21300000, guid: f5fb8738d53f5d84eb61eb222dcbb720, type: 3}
+  - {fileID: 21300000, guid: 2c0e8c99c6ff12747aaeae9b0296e4f1, type: 3}
+  - {fileID: 21300000, guid: e29818e9402192c47930abef60ab97fc, type: 3}
+  - {fileID: 21300000, guid: b85b736cdf6f1ea42bdd9233e6f1ac02, type: 3}
+  - {fileID: 21300000, guid: 3216957cde6ed1f44844ca8e4d316f5d, type: 3}
+  - {fileID: 21300000, guid: 88ee48ac35f6d444084a1976beafc01d, type: 3}
+  - {fileID: 21300000, guid: 93840aad5a51a8941b68315d1482d39d, type: 3}
+  - {fileID: 21300000, guid: 2654c6cdab1e4d94cbe8efa0b4d36799, type: 3}
+  - {fileID: 21300000, guid: 4780193e583554d4daf707464e22b15e, type: 3}
+  - {fileID: 21300000, guid: 364f42de2f66ab54495b615aa5894947, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - lensflare
+  - Btn_CloseDailyRewards_n
+  - Panel_CharacterAttribute
+  - Icon_VictoryStar_light
+  - Checkbox1_On
+  - joystickPad
+  - Map1
+  - Icon_Shop
+  - Title3
+  - phone casing
+  - TipScene1_Cyan
+  - RIGHT THUMB
+  - Ranking
+  - Popup_DailyRewards - Copy
+  - Checkbox1_Off
+  - ICON_Setting
+  - ring
+  m_RenderDataMap: {}
+  m_Tag: UI-Menu
+  m_IsVariant: 0

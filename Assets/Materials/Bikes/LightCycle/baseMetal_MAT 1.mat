@@ -78,7 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 93baa1109d57efa4988b2fe26f3feb8b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -153,7 +153,7 @@ Material:
     - _ObjectLow: 0.32
     - _OcclusionStrength: 1
     - _Outline: 0.05
-    - _OutlineWidth: 0.03
+    - _OutlineWidth: 0.06
     - _Panner: 0.35
     - _Parallax: 0.02
     - _Power: 0.66
@@ -186,11 +186,11 @@ Material:
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _ColorFill: {r: 0, g: 1, b: 1, a: 1}
     - _DispEmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0.979769, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0.98039246, b: 1, a: 1}
     - _EmissionColor1: {r: 0, g: 1, b: 0.89803934, a: 0}
-    - _OutlineColor: {r: 0, g: 0.842932, b: 1, a: 1}
+    - _OutlineColor: {r: 0.069811285, g: 0.7665409, b: 1, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _RimColor: {r: 0, g: 0.9092319, b: 1, a: 1}
+    - _RimColor: {r: 0, g: 0.90980387, b: 1, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
   m_BuildTextureStacks: []

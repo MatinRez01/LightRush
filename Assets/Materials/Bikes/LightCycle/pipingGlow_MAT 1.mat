@@ -21,12 +21,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pipingGlow_MAT 1
-  m_Shader: {fileID: -6465566751694194690, guid: 4121d79ad3460d447bd58cb53bca3848,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 7040b411960614f4eb9b90c940eeddb7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -63,8 +62,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -121,7 +120,8 @@ Material:
     - __dirty: 1
     m_Colors:
     - _AddColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0}
-    - _Color: {r: 2.2208877, g: 1.1705681, b: 0.22092603, a: 1}
+    - _BaseColor: {r: 0.9529412, g: 0.4509804, b: 0, a: 1}
+    - _Color: {r: 0.9528302, g: 0.45134062, b: 0, a: 1}
     - _ColorFill: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 3, g: 0.36528715, b: 0, a: 3}
     - _EmissionColor1: {r: 1, g: 0.13000315, b: 0, a: 0}
